@@ -1,6 +1,6 @@
 # 💻 FE Roadmap Lab ![Last commit](https://img.shields.io/github/last-commit/seungyeub/fe-roadmap-lab?label=last%20updated)
 
-> 실습/예제/프로토타입을 담는 **샌드박스 저장소**입니다.  
+> 실습/예제/프로토타입을 담는 **샌드박스 저장소**입니다.
 > 설계 문서: [`fe-roadmap-blueprint`](https://github.com/seungyeub/fe-roadmap-blueprint), 진행 로그: [`fe-roadmap-progress`](https://github.com/seungyeub/fe-roadmap-progress)
 
 🕒 **마지막 갱신:** 2025-11-19
@@ -9,7 +9,7 @@
 
 ## 📘 Repository Overview
 
-- **역할**: 학습 중 떠오르는 아이디어·개념을 **작게 실험하고 빠르게 검증**하는 공간입니다.  
+- **역할**: 학습 중 떠오르는 아이디어·개념을 **작게 실험하고 빠르게 검증**하는 공간입니다.
 - **철학**:
   - _작게 시작 → 바로 실행 → 결과 기록 → 인사이트 환류_
   - 실험 산출물은 가능하면 **작동하는 코드 + 짧은 회고**로 남깁니다.
@@ -23,7 +23,7 @@
 - **02_portfolio/** — 포트폴리오 산출물과 공용 컴포넌트 모음
 - **03_playgrounds/** — JS/TS/React 개념 실험, 성능/훅/상태관리 등
 - **04_testing/** — Jest/Vitest/RTL 예제 및 공용 설정
-- **_templates/** — 실습 스캐폴드(예: `react_vite_ts`)  
+- **_templates/** — 실습 스캐폴드(예: `react_vite_ts`)
 - **scripts/** — 새 실습 생성 스크립트 등 유틸리티
 
 ---
@@ -62,13 +62,15 @@ fe-roadmap-lab/
 ---
 
 ## 🚀 Getting Started
+
 1) 요구 사항
 
 - Node.js LTS (권장: v20 이상)
 - npm 또는 pnpm(선택)
 
 2) 베이스 템플릿 복제로 시작하기
-```
+
+```bash
 # 예: 01_mini-apps 아래에 todo-v1 생성
 rsync -a --exclude node_modules --exclude dist _templates/react_vite_ts/ 01_mini-apps/todo-v1/
 cd 01_mini-apps/todo-v1
@@ -83,7 +85,8 @@ npm test         # 단위 테스트(Vitest)
 
 scripts/new.sh는 상위 폴더 규칙에 맞춰 디렉터리를 생성하고 기본 README를 만들어 줍니다.
 (레거시 별칭도 지원: exp → play)
-```
+
+```bash
 # 사용법
 scripts/new.sh <TYPE> <NAME>
 
@@ -137,7 +140,8 @@ scripts/new.sh portfolio frontend-portfolio
 6. Links — 관련 Blueprint 문서, Progress 로그 링크
 
 예시:
-```
+
+```bash
 # Todo v1
 ## Goal
 - Vite+TS 템플릿 부트스트랩 및 상태 업데이트 흐름 확인
