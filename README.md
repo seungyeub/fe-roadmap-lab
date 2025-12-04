@@ -3,7 +3,7 @@
 > 실습/예제/프로토타입을 담는 **샌드박스 저장소**입니다.
 > 설계 문서: [`fe-roadmap-blueprint`](https://github.com/seungyeub/fe-roadmap-blueprint), 진행 로그: [`fe-roadmap-progress`](https://github.com/seungyeub/fe-roadmap-progress)
 
-🕒 **마지막 갱신:** 2025-11-19
+🕒 **마지막 갱신:** 2025-12-04
 
 ---
 
