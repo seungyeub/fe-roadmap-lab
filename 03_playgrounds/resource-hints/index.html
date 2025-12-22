@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Resource Hints Lab</title>
+
+  <!-- 실험: 아래 힌트를 켰다가/껐다가 Network에서 연결/시작 타이밍 비교 -->
+  <!-- DNS 프리페치 -->
+  <link rel="dns-prefetch" href="//picsum.photos">
+  <!-- 사전 연결(핸드셰이크 미리) -->
+  <link rel="preconnect" href="https://picsum.photos" crossorigin>
+  <!-- 프리로드(중요 리소스 먼저) -->
+  <link rel="preload" as="image" href="https://picsum.photos/640/360">
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Resource Hints</h1>
+  <p>Network 탭에서 연결/스타트/우선순위를 관찰하세요.</p>
+  <img id="hero" alt="hero" />
+  <script>
+    const img = document.getElementById('hero');
+    img.src = 'https://picsum.photos/640/360';
+  </script>
+</body>
+
+</html>
